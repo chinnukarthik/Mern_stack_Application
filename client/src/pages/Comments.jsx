@@ -19,7 +19,7 @@ const Comments = () => {
   const getTotalComments = async () => {
     try {
       const res = await axios.get(
-        `http://localhost:8000/api/v1/comment/my-blogs/comments`,
+        `https://mern-stack-application-38nc.onrender.com/api/v1/comment/my-blogs/comments`,
         { withCredentials: true }
       );
       if (res.data.success) {

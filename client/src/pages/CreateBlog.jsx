@@ -40,7 +40,7 @@ const CreateBlog = () => {
     try {
       setLoading(true);
       const res = await axios.post(
-        `https://coding-samurai-internship-task-q4e7.onrender.com/api/v1/blog`,
+        `/api/v1/blog`,
         { title, category },
         {
           headers: {

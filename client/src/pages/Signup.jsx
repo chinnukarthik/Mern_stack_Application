@@ -35,7 +35,7 @@ function Signup() {
 
     try {
       const res = await axios.post(
-        "http://localhost:8000/api/v1/user/signup",
+        "https://mern-stack-application-38nc.onrender.com/api/v1/user/signup",
         user,
         {
           headers: {

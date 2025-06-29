@@ -40,7 +40,7 @@ const BlogView = () => {
     try {
       const action = liked ? "dislike" : "like";
       const res = await axios.get(
-        `http://localhost:8000/api/v1/blog/${selectedBlog._id}/${action}`,
+        `https://mern-stack-application-38nc.onrender.com/api/v1/blog/${selectedBlog._id}/${action}`,
         {
           withCredentials: true,
         }

@@ -72,7 +72,7 @@ const Blog = () => {
     const getAllPublsihedBlogs = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:8000/api/v1/blog/get-published-blogs`,
+          `https://mern-stack-application-38nc.onrender.com/api/v1/blog/get-published-blogs`,
           { withCredentials: true }
         );
         if (res.data.success) {

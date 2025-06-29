@@ -74,7 +74,7 @@ const UpdateBlog = () => {
     try {
       setLoading(true);
       const res = await axios.put(
-        `http://localhost:8000/api/v1/blog/${id}`,
+        `https://mern-stack-application-38nc.onrender.com/api/v1/blog/${id}`,
         formData,
         {
           headers: {
@@ -100,7 +100,7 @@ const UpdateBlog = () => {
 
     try {
       const res = await axios.patch(
-        `http://localhost:8000/api/v1/blog/${id}`,
+        `https://mern-stack-application-38nc.onrender.com/api/v1/blog/${id}`,
         {},
         {
           params: { publish: action === "publish" },
@@ -126,7 +126,7 @@ const UpdateBlog = () => {
   const deleteBlog = async () => {
     try {
       const res = await axios.delete(
-        `http://localhost:8000/api/v1/blog/delete/${id}`,
+        `https://mern-stack-application-38nc.onrender.com/api/v1/blog/delete/${id}`,
         { withCredentials: true }
       );
       if (res.data.success) {
