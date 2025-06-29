@@ -1,11 +1,4 @@
 const createBlogHandler = async () => {
-  const token = localStorage.getItem("token"); // or get it from cookies/context
-
-  if (!token) {
-    toast.warning("Please login to create a blog");
-    return navigate("/login");
-  }
-
   try {
     setLoading(true);
     const res = await axios.post(
