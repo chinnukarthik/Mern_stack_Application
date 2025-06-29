@@ -5,7 +5,7 @@ import "./index.css";
 import App from "./App.jsx";
 import { Toaster } from "sonner";
 import store from "./redux/store";
-import ThemeProvider from "./components/themeProvider";
+import ThemeProvider from "./components/ThemeProvider";
 import { PersistGate } from "redux-persist/integration/react";
 import { persistStore } from "redux-persist";
 
